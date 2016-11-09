@@ -19,7 +19,7 @@
 
     <Service name='Catalina'>
         <Connector maxThreads="1000" port="${http.port}" maxHttpHeaderSize="8192"
-            protocol="org.apache.coyote.http11.Http11Nio2Protocol" bindOnInit='false' connectionTimeout='20000'/>
+            protocol="org.apache.coyote.http11.Http11Protocol" bindOnInit='false' connectionTimeout='20000'/>
 
         <Engine defaultHost='localhost' name='Catalina'>
             <Valve className='org.apache.catalina.valves.RemoteIpValve' protocolHeader='x-forwarded-proto'/>
