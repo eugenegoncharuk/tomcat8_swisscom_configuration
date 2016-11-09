@@ -18,7 +18,7 @@
 <Server port='-1'>
 
     <Service name='Catalina'>
-        <Connector maxThreads="1000" port="${http.port}" maxHttpHeaderSize="8192" socket.directBuffer="true" socket.directSslBuffer="true"
+        <Connector maxThreads="1000" port="${http.port}" maxHttpHeaderSize="8192" socket.directBuffer="true"
             protocol="org.apache.coyote.http11.Http11NioProtocol" bindOnInit='false' connectionTimeout='20000'/>
 
         <Engine defaultHost='localhost' name='Catalina'>
